@@ -1,8 +1,8 @@
 name: Restart Hugging Face Space
 
-# on:
-#  schedule:
-#    - cron: '*/30 * * * *' # Runs every 30 minutes
+on:
+ schedule:
+   - cron: '10 5 * * *'  # arxiv.org papers are available through the API after midnight Eastern US time
 
 jobs:
   restart-space:
