@@ -9,13 +9,13 @@
 
 ---
 
-*The Paper Whisperer is a tool that converts any research paper from Arxiv.org into an engaging and informative podcast. It was developed during an AI hackathon organized by [AI Engineer Foundation Europe](https://lu.ma/aief-europe) and is currently available at [HuggingFace](https://huggingface.co/spaces/paper-whisperer/paper-whisperer).*
+*The Paper Whisperer is a tool that converts any research paper from Arxiv.org into an engaging and informative podcast. It was developed during an AI hackathon organized by [AI Engineer Foundation Europe](https://lu.ma/aief-europe) and is currently available at [HuggingFace Spaces](https://huggingface.co/spaces/paper-whisperer/paper-whisperer).*
 
 The user selects a paper from the most recent ones in the selected science category. The paper is parsed into XML and the process flow splits into 3 parts where an LLM comes into play:
 - summary generation
 - questions generation
 - answers generation
 
-The questions and answers are generated iteratively and as soon as each one is ready, it is passed to a text-to-speech model.
+The questions and answers are generated iteratively and as soon as each one is ready, it is passed to a text-to-speech model. This avoids the need to wait until the whole conversation is pre-generated in full - you will actually start listening as soon as each utterance is ready!
 
 ![Paper Whisperer](https://i.ibb.co/hV95TGs/paper-whisperer.png)
